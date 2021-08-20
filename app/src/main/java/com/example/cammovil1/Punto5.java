@@ -2,6 +2,7 @@ package com.example.cammovil1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -26,5 +27,9 @@ public class Punto5 extends AppCompatActivity {
             TextView Verificado = (TextView) findViewById(R.id.ResultadoPunto5);
             Verificado.setText("El numero ingrsado " + numero + " es impar");
         }
+    }
+    public void atras(View v){
+        Intent home = new Intent(this,MainActivity.class);
+        startActivity(home);
     }
 }
