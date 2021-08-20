@@ -33,4 +33,9 @@ public class MainActivity extends AppCompatActivity {
         Intent p4 = new Intent( this,Punto4.class);
         startActivity(p4);
     }
+    public void punto5(View v){
+
+        Intent p5 = new Intent( this,Punto5.class);
+        startActivity(p5);
+    }
 }

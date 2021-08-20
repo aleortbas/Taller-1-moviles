@@ -21,41 +21,45 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="40dp"
         android:onClick="punto1"
         android:text="Ir"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Punto2"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginBottom="13dp"
         android:text="Calculadora Sueldo"
         app:layout_constraintBottom_toTopOf="@+id/textView8"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="149dp"
+        android:layout_width="0dp"
         android:layout_height="42dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginBottom="48dp"
-        android:text="Algorritmo, operacion de 5 numeros"
-        app:layout_constraintBottom_toBottomOf="@+id/punto3"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="@+id/Punto1" />
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="72dp"
+        android:text="Operacion de 5 numeros"
+        app:layout_constraintBottom_toBottomOf="@+id/textView22"
+        app:layout_constraintEnd_toStartOf="@+id/Punto2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/Punto2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="42dp"
+        android:layout_marginEnd="40dp"
         android:onClick="punto2"
         android:text="Ir"
-        app:layout_constraintStart_toStartOf="@+id/Punto1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
         app:layout_constraintTop_toTopOf="@+id/Punto1" />
 
     <TextView
@@ -80,19 +84,38 @@
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="202dp"
+        android:layout_marginEnd="31dp"
         android:text="Verificar numero"
         app:layout_constraintEnd_toEndOf="@+id/textView19"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/Punto4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
         android:onClick="punto4"
         android:text="Ir"
         app:layout_constraintStart_toStartOf="@+id/punto3"
         app:layout_constraintTop_toBottomOf="@+id/punto3" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="38dp"
+        android:text="Numero par o impar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <Button
+        android:id="@+id/Punto5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:onClick="punto5"
+        android:text="Ir"
+        app:layout_constraintEnd_toEndOf="@+id/Punto4"
+        app:layout_constraintTop_toBottomOf="@+id/Punto4" />
 </androidx.constraintlayout.widget.ConstraintLayout>
