@@ -154,4 +154,24 @@
         android:text="Sueldo obrero"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/PrimaAnual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="14dp"
+        android:text="Prima Anual"
+        app:layout_constraintEnd_toEndOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:onClick="punto8"
+        android:text="Ir"
+        app:layout_constraintStart_toStartOf="@+id/Punto7"
+        app:layout_constraintTop_toBottomOf="@+id/Punto7" />
 </androidx.constraintlayout.widget.ConstraintLayout>
