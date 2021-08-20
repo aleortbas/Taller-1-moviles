@@ -43,4 +43,9 @@ public class MainActivity extends AppCompatActivity {
         Intent p6 = new Intent( this,Punto6.class);
         startActivity(p6);
     }
+    public void punto7(View v){
+
+        Intent p7 = new Intent( this,Punto7.class);
+        startActivity(p7);
+    }
 }
