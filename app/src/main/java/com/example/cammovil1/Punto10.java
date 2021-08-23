@@ -20,23 +20,16 @@ public class Punto10 extends AppCompatActivity {
         EditText des = findViewById(R.id.desde);
         EditText has = findViewById(R.id.hasta);
 
-        int i;
-        int resultado;
+        int suma = 0;
         int multiplo = Integer.parseInt(mult.getText().toString());
         int desde = Integer.parseInt(des.getText().toString());
         int hasta = Integer.parseInt(has.getText().toString());
-        int suma = 0;
 
-
-
-        int[] numeros = new int[hasta];
-        for (i = 0; i < hasta; i++) {
-            numeros[i] = 1+i;
-            resultado = numeros[i]%multiplo;
-
-            if(resultado == 0){
-                suma +=numeros[i];
+        while(desde <= hasta){
+            if(desde%multiplo == 0){
+                suma += desde;
             }
+            desde ++;
         }
         TextView SumaMultiplos = (TextView) findViewById(R.id.resultadoSUMA);
         SumaMultiplos.setText("La suma de los multiplos es: " + suma);
