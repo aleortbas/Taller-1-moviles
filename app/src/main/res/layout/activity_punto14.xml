@@ -10,8 +10,10 @@
         android:id="@+id/textView50"
         android:layout_width="228dp"
         android:layout_height="32dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginBottom="56dp"
         android:text="Suma de los digitos pare y impares"
+        app:layout_constraintBottom_toTopOf="@+id/textView54"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,8 +22,8 @@
         android:id="@+id/textView54"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="158dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="149dp"
         android:text="Digite un numero"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,39 +32,32 @@
         android:id="@+id/numeroParImp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="15dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView54"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/SumaPar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        app:layout_constraintEnd_toStartOf="@+id/SumaImpar"
-        app:layout_constraintStart_toStartOf="@+id/SumaImpar"
-        app:layout_constraintTop_toBottomOf="@+id/numeroParImp" />
-
-    <TextView
-        android:id="@+id/SumaImpar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="39dp"
-        app:layout_constraintStart_toEndOf="@+id/button19"
-        app:layout_constraintTop_toBottomOf="@+id/SumaPar" />
+        android:layout_width="146dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginBottom="124dp"
+        app:layout_constraintBottom_toTopOf="@+id/button18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView50" />
 
     <Button
         android:id="@+id/button18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="23dp"
+        android:layout_marginBottom="302dp"
         android:onClick="calcular"
         android:text="Calcular"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button19"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
@@ -70,9 +65,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="39dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="42dp"
         android:onClick="atras"
         android:text="Atras"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SumaImpar" />
+        app:layout_constraintTop_toBottomOf="@+id/Sumaimpar" />
+
+    <TextView
+        android:id="@+id/Sumaimpar"
+        android:layout_width="153dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="42dp"
+        app:layout_constraintBottom_toTopOf="@+id/button18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SumaPar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

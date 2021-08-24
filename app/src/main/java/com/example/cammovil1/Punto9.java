@@ -2,6 +2,7 @@ package com.example.cammovil1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -54,6 +55,9 @@ public class Punto9 extends AppCompatActivity {
         }
         TextView Multiplicacion = (TextView) findViewById(R.id.MultiplicacionMayores);
         Multiplicacion.setText("La multiplicacion de mayores a cero: " + multiplicacion + " Total de numeros menores a cero" + menoresCero);
-
+    }
+    public void atras(View v){
+        Intent home = new Intent(this,MainActivity.class);
+        startActivity(home);
     }
 }
