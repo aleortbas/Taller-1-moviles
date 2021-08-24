@@ -2,6 +2,7 @@ package com.example.cammovil1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.view.View;
@@ -33,5 +34,9 @@ public class Punto10 extends AppCompatActivity {
         }
         TextView SumaMultiplos = (TextView) findViewById(R.id.resultadoSUMA);
         SumaMultiplos.setText("La suma de los multiplos es: " + suma);
+    }
+    public void atras(View v){
+        Intent home = new Intent(this,MainActivity.class);
+        startActivity(home);
     }
 }

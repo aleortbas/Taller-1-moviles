@@ -2,6 +2,7 @@ package com.example.cammovil1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -31,5 +32,9 @@ public class Punto11 extends AppCompatActivity {
 
         TextView gastosFinal = findViewById(R.id.gastosViajes);
         gastosFinal.setText("Los gastos totales fueron: " + sumaGastos);
+    }
+    public void atras(View v){
+        Intent home = new Intent(this,MainActivity.class);
+        startActivity(home);
     }
 }
