@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class Punto2 extends AppCompatActivity {
 
@@ -31,7 +32,7 @@ public class Punto2 extends AppCompatActivity {
         double operacion1 = (((numero1+numero2)-numero3)*numero4)/numero5;
         double operacion2 = (((numero5+numero4)-numero3)*numero2)/numero1;
 
-        EditText res = findViewById(R.id.Resultado2);
+        TextView res = findViewById(R.id.Resultado2);
         res.setText("Operacion 1: " + operacion1 + ", Operacion 2: " + String.format("%.2f",operacion2));
     }
     public void atras2(View v){

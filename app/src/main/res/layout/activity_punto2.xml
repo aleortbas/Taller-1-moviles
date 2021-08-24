@@ -10,7 +10,7 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="16dp"
         android:text="Algoritmo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,44 +21,43 @@
         android:layout_width="0dp"
         android:layout_height="44dp"
         android:layout_marginStart="19dp"
-        android:layout_marginTop="53dp"
+        android:layout_marginTop="49dp"
         android:layout_marginEnd="19dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="44dp"
         android:text="Crear un algoritmo que lea 5 números y luego imprima el resultado."
         app:layout_constraintBottom_toTopOf="@+id/n1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView9" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/n1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="23dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginTop="137dp"
         android:text="Digite numero 1"
-        app:layout_constraintBottom_toTopOf="@+id/n2"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/n2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="220dp"
-        android:layout_marginBottom="219dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="48dp"
         android:text="Digite numero 2"
-        app:layout_constraintBottom_toTopOf="@+id/n5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView9" />
+        app:layout_constraintBottom_toTopOf="@+id/n3"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/n3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="21dp"
+        android:layout_marginBottom="54dp"
         android:text="Digite numero 3"
-        app:layout_constraintBottom_toBottomOf="@+id/num3"
+        app:layout_constraintBottom_toTopOf="@+id/n4"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -66,27 +65,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="23dp"
-        android:layout_marginTop="28dp"
         android:text="Digite numero 4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/num4" />
+        app:layout_constraintBottom_toBottomOf="@+id/num4"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/n5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginStart="19dp"
         android:text="Digite numero 5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/num5" />
+        app:layout_constraintBottom_toBottomOf="@+id/num5"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/num1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="26dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="22dp"
         android:ems="10"
         android:inputType="number"
         android:minHeight="48dp"
@@ -98,8 +95,8 @@
         android:id="@+id/num2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="26dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
         android:ems="10"
         android:inputType="number"
         android:minHeight="48dp"
@@ -111,8 +108,8 @@
         android:id="@+id/num3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="26dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="20dp"
         android:ems="10"
         android:inputType="number"
         android:minHeight="48dp"
@@ -124,50 +121,27 @@
         android:id="@+id/num4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="26dp"
-        android:layout_marginBottom="33dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="20dp"
         android:ems="10"
         android:inputType="number"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/num5"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num3"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/num5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="20dp"
         android:ems="10"
         android:inputType="number"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/Resultado2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num4"
         tools:ignore="SpeakableTextPresentCheck" />
-
-    <EditText
-        android:id="@+id/Resultado2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="36dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/calcular"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginBottom="36dp"
-        android:text="Resultado"
-        app:layout_constraintBottom_toTopOf="@+id/atras2"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/calcular"
@@ -190,5 +164,18 @@
         android:text="Atras"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Resultado2"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="152dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/n5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
