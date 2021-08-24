@@ -24,6 +24,7 @@ public class Punto9 extends AppCompatActivity {
         EditText num7 = findViewById(R.id.nu7);
         EditText num8 = findViewById(R.id.nu8);
         EditText num9 = findViewById(R.id.nu9);
+        EditText num10 = findViewById(R.id.nu10);
 
         int i = 0;
         double multiplicacion = 1;
@@ -37,22 +38,22 @@ public class Punto9 extends AppCompatActivity {
         int n7 = Integer.parseInt(num7.getText().toString());
         int n8 = Integer.parseInt(num8.getText().toString());
         int n9 = Integer.parseInt(num9.getText().toString());
+        int n10 = Integer.parseInt(num10.getText().toString());
 
 
-        int numeros[] =new int[]{n1,n2,n3,n4,n5,n6,n7,n8,n9};
+        int numeros[] =new int[]{n1,n2,n3,n4,n5,n6,n7,n8,n9,n10};
+
 
         for (int u=0; u < numeros.length; u++){
 
             if(numeros[u] > 0){
                 multiplicacion *= numeros[u];
-            }else if(numeros[u] == 0){
-                i++;
-                menoresCero = i;
+            }else if(numeros[u] <= 0 ){
+                menoresCero ++;
             }
         }
         TextView Multiplicacion = (TextView) findViewById(R.id.MultiplicacionMayores);
-        Multiplicacion.setText("La multiplicacion de mayores a cero: " + multiplicacion);
-        TextView MenoresCero = (TextView) findViewById(R.id.TotalCeros);
-        MenoresCero.setText("Total de numeros menores a cero: " + menoresCero);
+        Multiplicacion.setText("La multiplicacion de mayores a cero: " + multiplicacion + " Total de numeros menores a cero" + menoresCero);
+
     }
 }
