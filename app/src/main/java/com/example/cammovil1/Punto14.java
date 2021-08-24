@@ -7,14 +7,14 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class Punto13 extends AppCompatActivity {
+public class Punto14 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_punto13);
+        setContentView(R.layout.activity_punto14);
     }
-    public void CalcularCifras(View v){
+    public void calcular(View v){
         EditText num = findViewById(R.id.NumeroCifras);
 
         int numCifras = 0;
@@ -25,6 +25,6 @@ public class Punto13 extends AppCompatActivity {
             numCifras ++;
         }
         TextView cifras = (TextView) findViewById(R.id.Cifras);
-        cifras.setText("La cantida de digitos es : " + numCifras+ " " + numero);
+        cifras.setText("La suma de los multiplos es: " + numCifras + " test " + numero);
     }
 }

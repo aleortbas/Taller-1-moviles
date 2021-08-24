@@ -31,24 +31,22 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="13dp"
-        android:text="Calculadora Sueldo"
+        android:layout_marginBottom="17dp"
+        android:text="Punto 1"
         app:layout_constraintBottom_toTopOf="@+id/textView8"
-        app:layout_constraintEnd_toEndOf="@+id/textView23"
+        app:layout_constraintEnd_toEndOf="@+id/PrimaAnual"
         app:layout_constraintStart_toStartOf="@+id/PrimaAnual" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="150dp"
         android:layout_height="42dp"
-        android:layout_marginTop="72dp"
-        android:layout_marginBottom="72dp"
-        android:text="Operacion de 5 numeros"
-        app:layout_constraintBottom_toBottomOf="@+id/textView22"
+        android:layout_marginTop="102dp"
+        android:layout_marginBottom="102dp"
+        android:text="Punto 2"
+        app:layout_constraintBottom_toTopOf="@+id/textView23"
         app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="@+id/textView" />
 
     <Button
         android:id="@+id/Punto2"
@@ -64,10 +62,10 @@
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="9dp"
-        android:text="Calculadora aumento"
+        android:layout_marginTop="159dp"
+        android:text="Punto 3"
         app:layout_constraintStart_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/punto3"
@@ -82,13 +80,11 @@
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="167dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginBottom="168dp"
-        android:text="Verificar numero"
-        app:layout_constraintBottom_toBottomOf="@+id/Punto7"
-        app:layout_constraintEnd_toEndOf="@+id/textView19"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="26dp"
+        android:text="Punto 4"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <Button
         android:id="@+id/Punto4"
@@ -103,10 +99,10 @@
         android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="38dp"
-        android:text="Numero par o impar"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="39dp"
+        android:text="Punto 5"
+        app:layout_constraintEnd_toEndOf="@+id/textView22"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
         app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
     <Button
@@ -124,7 +120,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="27dp"
-        android:text="Calificaciones estudiantes"
+        android:text="Punto 6"
         app:layout_constraintStart_toStartOf="@+id/textView23"
         app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
@@ -152,20 +148,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
-        android:layout_marginBottom="26dp"
-        android:text="Sueldo obrero"
-        app:layout_constraintBottom_toTopOf="@+id/PrimaAnual"
-        app:layout_constraintStart_toStartOf="@+id/PrimaAnual" />
+        android:layout_marginTop="27dp"
+        android:text="Punto 7"
+        app:layout_constraintStart_toStartOf="@+id/PrimaAnual"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
     <TextView
         android:id="@+id/PrimaAnual"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="43dp"
-        android:layout_marginTop="72dp"
-        android:text="Prima Anual"
+        android:layout_marginTop="27dp"
+        android:text="Punto 8"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
     <Button
         android:id="@+id/button8"
@@ -181,12 +177,12 @@
         android:id="@+id/textView39"
         android:layout_width="163dp"
         android:layout_height="37dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginBottom="27dp"
-        android:text="Multiplicacion mayores de cero"
-        app:layout_constraintBottom_toBottomOf="@+id/textView40"
+        android:layout_marginTop="121dp"
+        android:layout_marginBottom="121dp"
+        android:text="Punto 9"
+        app:layout_constraintBottom_toTopOf="@+id/button20"
         app:layout_constraintStart_toStartOf="@+id/PrimaAnual"
-        app:layout_constraintTop_toBottomOf="@+id/PrimaAnual" />
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
     <Button
         android:id="@+id/button11"
@@ -203,10 +199,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="3dp"
-        android:layout_marginTop="73dp"
-        android:text="Suma de multiplos"
+        android:layout_marginTop="6dp"
+        android:text="Punto 10"
         app:layout_constraintStart_toStartOf="@+id/textView39"
-        app:layout_constraintTop_toBottomOf="@+id/PrimaAnual" />
+        app:layout_constraintTop_toBottomOf="@+id/textView39" />
 
     <Button
         android:id="@+id/button12"
@@ -221,20 +217,31 @@
         android:id="@+id/textView43"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="43dp"
-        android:layout_marginTop="28dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="3dp"
+        android:text="Punto 11"
+        app:layout_constraintEnd_toEndOf="@+id/textView40"
         app:layout_constraintTop_toBottomOf="@+id/textView40" />
 
     <Button
         android:id="@+id/button15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="45dp"
         android:layout_marginEnd="1dp"
         android:onClick="punto11"
         android:text="Ir"
         app:layout_constraintEnd_toEndOf="@+id/button12"
         app:layout_constraintTop_toTopOf="@+id/button12" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="siguiente"
+        android:text="Siguiente"
+        app:layout_constraintEnd_toStartOf="@+id/button15"
+        app:layout_constraintTop_toBottomOf="@+id/button15" />
 </androidx.constraintlayout.widget.ConstraintLayout>
