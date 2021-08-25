@@ -28,8 +28,8 @@ public class Punto9 extends AppCompatActivity {
         EditText num10 = findViewById(R.id.nu10);
 
         int i = 0;
-        double multiplicacion = 1;
-        double menoresCero = 0;
+        int multiplicacion = 1;
+        int menoresCero = 0;
         int n1 = Integer.parseInt(num1.getText().toString());
         int n2 = Integer.parseInt(num2.getText().toString());
         int n3 = Integer.parseInt(num3.getText().toString());
@@ -54,7 +54,7 @@ public class Punto9 extends AppCompatActivity {
             }
         }
         TextView Multiplicacion = (TextView) findViewById(R.id.MultiplicacionMayores);
-        Multiplicacion.setText("La multiplicacion de mayores a cero: " + multiplicacion + " Total de numeros menores a cero" + menoresCero);
+        Multiplicacion.setText("La multiplicacion de mayores a cero: " + multiplicacion + " Total de numeros menores a cero " + menoresCero);
     }
     public void atras(View v){
         Intent home = new Intent(this,MainActivity.class);
